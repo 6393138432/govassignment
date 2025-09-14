@@ -1,0 +1,86 @@
+.license-registration-section {
+  .stats-box {
+    border-radius: 12px;
+  }
+
+  .badge {
+    background: linear-gradient(90deg, #2a4dff, #ff6f20);
+    border-radius: 20px;
+    padding: 10px 20px;
+  }
+
+  .accordion-button {
+    font-weight: 600;
+    font-size: 1rem;
+  }
+
+  .accordion-body {
+    background: #f8faff;
+    border-radius: 8px;
+
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      flex-direction: column;
+    }
+  }
+}
+
+
+
+$card-bg: #fff;
+$shadow: rgba(0, 0, 0, 0.1);
+
+body {
+  background: #f5f7fa;
+  font-family: "Arial", sans-serif;
+}
+
+.logo-carousel {
+  .logo-card {
+    background: $card-bg;
+    border-radius: 12px;
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 320px;
+    box-shadow: 0 4px 10px $shadow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease;
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    &:hover {
+      transform: translateY(-5px) scale(1.03);
+    }
+  }
+
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    background-size: 100% 100%;
+    filter: invert(1);
+  }
+
+  .carousel-indicators [data-bs-target] {
+    background-color: #333;
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .logo-carousel .logo-card {
+    max-width: 260px;
+    padding: 15px;
+  }
+}
+
+@media (max-width: 576px) {
+  .logo-carousel .logo-card {
+    max-width: 220px;
+    padding: 12px;
+  }
+}
