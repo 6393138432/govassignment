@@ -1,0 +1,4 @@
+
+npm init -y
+npm install sass --save-dev
+npx sass --watch scss/:css/
